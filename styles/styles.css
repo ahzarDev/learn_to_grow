@@ -1,0 +1,294 @@
+/* Globaly added fonts start  */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('../assets/fonts/montserrat/Montserrat-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat/Montserrat-Italic.woff2') format('woff2'),
+        url('../assets/fonts/montserrat/Montserrat-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat/Montserrat-BoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/montserrat/Montserrat-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('../assets/fonts/montserrat/Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+/* Globaly added fonts end  */
+
+/* Global color varaibles start */
+:root{
+    --red: #E74040;
+    --light-blue: #046dff;
+    --light-yellow: #E77C40;
+    --light-green: #2DC071;
+    --black: #252B42;
+    --white: #dfdcdc;
+    --whiteish: #656363;
+}
+/* Global color varaibles end  */
+
+/* Global Styles  */
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    font-family: 'Montserrat';
+}
+*{
+    box-sizing: border-box;  
+}
+button,h1,h2,h3,h4,h5,h6,li,ol,ul {
+    margin: 0;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+li{
+    margin: 0 10px;
+}
+
+li a{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+    padding: 5px 12px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.7); /* White with 80% opacity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center; /* Center text */
+    margin-bottom: 10px;
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+/* End Global Styles */
+
+/* Header Section Styles  */
+header {
+    background-image: url('../home.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire header area */
+    background-position: center; /* Center the image */
+    text-align: center; /* Center align text */
+    
+    height: 110vh;
+}
+
+nav{
+    padding: 6px 85px !important;
+    justify-content: space-between;
+}
+nav .nav-logo img{
+    margin-right: 20px;
+    height: 35px;
+    width: 100px;
+}
+nav .nav-search-bar{
+    margin-right: 20px;
+    padding: 5px 12px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+nav .nav-left .btn{
+    color: black;
+}
+nav .nav-search-bar input{
+    border: none;
+}
+nav .nav-search-bar span{
+    margin-right: 5px;
+}
+.nav-right .nav-icons{
+    margin: 2px 10px;
+    font-size: 11px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nav-right .nav-icons img{
+    height: 20px;
+    width: 20px;
+    margin-bottom: 6px;
+}
+
+.hero{
+    margin-left: 60px;
+}
+
+.hero .hero-heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 6px 30px;
+}
+.hero-heading p{
+    color: #046dff;
+    margin-left: 10px;
+    font-weight: 600;
+}
+.hero-description {
+    width: fit-content;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 16px 25px;
+}
+.hero-desc-heading h2{
+    font-weight: 700;
+    text-align: left;
+}
+.hero-desc-heading .hero-text-red
+{
+    color: var(--red);
+    font-weight: 700;
+}
+.hero-description .hero-desc-items{
+    display: flex;
+    flex-direction: row;
+}
+.hero-description ul{
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.hero-description .hero-li-heading{
+    font-weight: 500;
+    margin: 10px 20px 10px 0;
+    color: #046dff;
+}
+.hero-description .hero-li-item{
+    margin: 10px 20px 10px 0;
+}
+.hero-description .hero-li-item span{
+    color: var(--red);
+}
+.hero-buttons{
+    width: 50%;
+    margin-top: 30px;
+}
+.hero-buttons ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.hero-buttons li{
+    border: none;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 13px 25px !important;
+    margin-right: 15px;
+}
+.star-options{
+    margin: 150px auto 10px auto;
+    width: fit-content;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.star-options .star-options-heading h2{
+    margin-bottom: 10px;
+    color: var(--red);
+}
+.star-options .star-options-desc li{
+    list-style: disc;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+/* End Header Section Styles  */
+
+/* Footer Section Styles  */
+
+footer{
+    background-color: black;
+    padding: 20px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer li, a{
+    color: var(--white);
+}
+footer .footer-main-logo img{
+    margin-right: 20px;
+    height: 45px;
+    width: 130px;
+}
+footer .footer-main{
+    padding: 20px 80px !important;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+footer .footer-main ul{
+    display: flex;
+    flex-direction: column;
+}
+footer .footer-main .footer-li-heading{
+    font-size: 14px;
+}
+footer .footer-main li{
+    padding: 6px;
+    font-size: 12px;
+}
+footer .footer-social-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+footer .footer-social-logo img{
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    border: none;
+    margin-right: 10px;
+}
+
+footer .footer-bottom p{
+    color: var(--white);
+    font-size: 12px;
+    padding-top: 15px;
+    text-align: center;
+    border-top: 1px solid var(--whiteish);
+}
+/* End Footer Section Styles  */
